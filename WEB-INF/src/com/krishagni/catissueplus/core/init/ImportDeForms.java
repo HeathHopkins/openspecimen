@@ -62,7 +62,7 @@ public class ImportDeForms extends ImportForms  {
 		formCtx.setEntityType(entityType);
 		formCtx.setMultiRecord(false);
 		formCtx.setSortOrder(null);
-		formCtx.setSysForm(true);
+		formCtx.setSysForm(false);
 		return formCtx;
 	}
 

@@ -21,6 +21,13 @@ angular.module('os.biospecimen.participant.root', ['os.biospecimen.models'])
 
       // Participant Authorization Options
       $scope.participantResource = {
+        readOpts: {
+          resource: 'ParticipantPhi',
+          operations: ['Read'],
+          cp: $scope.cpr.cpShortTitle,
+          sites: sites
+        },
+
         updateOpts: {
           resource: 'ParticipantPhi',
           operations: ['Update'],
